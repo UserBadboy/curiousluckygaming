@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: rgb(11, 11, 11);
+            width: 100%;
+            height: 250vh;
+        }
+
+
+        .nav-bar {
+            display: flexbox;
+            background-color: rgb(35, 33, 33);
+            height: 10vh;
+
+        }
+
+
+        .sitelogo {
+            margin-top: 1.378%;
+            margin-right: 0.3%;
+            width: 2%;
+            height: 2%;
+            border-radius: 8px;
+            background-color: rgb(15, 15, 15);
+
+
+
+        }
+
+
+        .heading1 {
+            display: flex;
+            color: whitesmoke;
+            margin-left: 2%;
+        }
+
+
+        .menu-items {
+            display: flex;
+            color: whitesmoke;
+            margin-top: -2%;
+            float: right;
+            width: 48vw;
+            margin-top: -3%;
+            margin-right: 2%;
+
+        }
+
+        .menu-items li {
+            text-decoration: none;
+            list-style: none;
+            margin-left: 3.5%;
+            font-size: larger;
+            border: 1.5px solid whitesmoke;
+            border-radius: 7%;
+            padding: 2.5px 2.5px;
+
+        }
+
+        .menu-items li a {
+            color: antiquewhite;
+            text-decoration: none;
+
+
+        }
+
+        .menu-items li:hover,
+        .menu-items li a:hover {
+            color: rgb(21, 255, 0);
+            transition: 0.4s ease-in-out;
+            cursor: pointer;
+            text-decoration: none;
+
+        }
+
+
+
+
+
+        .paragraph1 {
+            color: yellow;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 8vh;
+            margin-top: 1%;
+            margin-bottom: -15%;
+            margin-left: 32%;
+
+        }
+
+
+
+
+        .bodyimage-section {
+            width: 90vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 50% 50%;
+            margin-top: 16%;
+            margin-left: 5.5%;
+
+        }
+
+        .pubgimage {
+            width: 95%;
+            height: 80%;
+
+
+        }
+
+        .pubgimage:hover {
+            cursor: pointer;
+            border: 3px solid white;
+            border-radius: 3px;
+        }
+
+        .image-description {
+            color: chartreuse;
+            margin-top: -28%;
+            font-size: larger;
+            margin-left: 5.5%;
+
+
+
+        }
+
+        .horizontalline1 {
+            color: gray;
+            width: 95%;
+            height: 0%;
+            margin-top: -3%;
+        }
+
+        .horizontalline2 {
+            color: gray;
+            width: 95%;
+            height: 0%;
+            margin-top: 1.8%;
+        }
+
+        .horizontalline3 {
+            color: gray;
+            width: 95%;
+            height: 0%;
+            margin-top: 1.8%;
+
+
+        }
+
+        .gameplayheading {
+            margin-left: 5.5%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3.8vh;
+            color: rgb(9, 245, 60);
+
+        }
+
+
+        .gameplaylink {
+
+            margin-left: 5.5%;
+
+
+        }
+
+        .videolink2,
+        .videolink3,
+        .videolink4 {
+            margin-left: 3%;
+
+
+
+        }
+
+        .newandupdatesheading {
+
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3.8vh;
+            color: rgb(9, 245, 60);
+
+
+        }
+
+
+        .newsandupdates {
+
+            margin-left: 5.5%;
+
+        }
+
+        .officialpubgupdate2,
+        .officialpubgupdate3,
+        .officialpubgupdate4 {
+
+            margin-left: 3%;
+
+        }
+
+
+
+        .event-subcontainer {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            margin-left: 5.5%;
+
+        }
+
+        .event-heading {
+            margin-left: 5.5%;
+            font-size: 3.8vh;
+            color: rgb(9, 245, 60);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .event-subcontainer,
+        img {
+            width: 91.6%;
+            height: 150%;
+
+        }
+
+        .horizontalline5 {
+            margin-top: 7%;
+            width: 95%;
+            height: 0%;
+
+        }
+
+        .horizontalline6 {
+            margin-top: 0%;
+            width: 95%;
+            height: 0%;
+        }
+
+
+        .aboutheading {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 3.8vh;
+            color: rgb(9, 245, 60);
+            margin-left: 2.8%;
+
+
+        }
+
+
+        .about-section {
+            margin-left: 2.5%;
+            font-size: 2.6vh;
+            color: lightgreen;
+
+        }
+
+        .about-section a {
+            color: rgb(24, 225, 158);
+            text-decoration: none;
+
+        }
+
+        .sitelogolink-bottom {
+            margin-top: 1.5%;
+            margin-right: 0.3%;
+            width: 2%;
+            height: 2%;
+            border-radius: 8px;
+            background-color: rgb(15, 15, 15);
+
+
+
+
+        }
+
+
+
+        .bottom {
+            margin-left: 4.6%;
+            margin-top: 0%;
+
+        }
+
+        .span1 {
+            color: red;
+
+
+        }
+
+        .span2 {
+            color: darkturquoise;
+
+
+        }
+
+
+        .span3 {
+            color: rgb(56, 244, 9);
+
+
+        }
+
+        .span1,
+        .span2,
+        .span3 {
+            font-size: 2.6vh;
+
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <!--        ---------------------------------------------------------------------------      11                                         -->
+
+    <div class="nav-bar">
+        <container class="heading1">
+            <img class="sitelogo" src="curiouslucky gaming logo.jpg">
+            <h2> Curious lucky gaming </h2>
+        </container>
+
+        </container class="menu-logo">
+
+        <item class="menu-items">
+            <li> HOME </li> </a>
+            <li> <a href="#gameplayheading"> MY GAME-PLAY </a> </li>
+            <li><a href="#newsandupdates"> NEWS AND UPDATES</a> </li>
+            <li><a href="#event-container"> EVENTS </a> </li>
+            <li><a href="#about-section"> ABOUT US </a> </li>
+
+
+
+        </item>
+
+
+        </container>
+
+
+    </div>
+    <!--        ---------------------------------------------------------------------------  2                                             -->
+
+
+
+    <div class="body-paragraph">
+        <p class="paragraph1"> Curious lucky gaming </p>
+
+
+    </div>
+
+
+    <!--        ---------------------------------------------------------------------------  3                                             -->
+    <!--        ---------------------------------------------------------------------------                                               -->
+
+    <div class="bodyimage-section">
+
+
+
+        <image class="pubgimage fistimg"
+            src="https://c4.wallpaperflare.com/wallpaper/666/441/256/pubg-pubh-playerunknown-s-battlegrounds-wallpaper-preview.jpg">
+        </image>
+        <image class="pubgimage"
+            src="https://c4.wallpaperflare.com/wallpaper/320/205/156/playerunknown-s-battlegrounds-pubg-mobile-game-hd-wallpaper-preview.jpg">
+        </image>
+        <image class="pubgimage" src="https://c4.wallpaperflare.com/wallpaper/256/240/14/pubg-wallpaper-preview.jpg">
+        </image>
+        <image class="pubgimage lastimg"
+            src="https://c4.wallpaperflare.com/wallpaper/112/262/501/gaming-series-video-games-pubg-players-unknown-battleground-bikes-hd-wallpaper-preview.jpg">
+        </image>
+
+
+    </div>
+    <p class="image-description"> Some Themes Of Pubg Mobile: </p>
+    <hr class="horizontalline1">
+    <hr class="horizontalline2">
+
+    <!--        ---------------------------------------------------------------------------  4                                             -->
+    <!--        ---------------------------------------------------------------------------                                               -->
+
+    <div class="mygameplay" id="mygameplay">
+
+        <p class="gameplayheading" id="gameplayheading"> My Game-Play: </p>
+
+        <div class="gameplaylink" id="gameplaylink">
+            <iframe class="videolink1" width="304" height="250" src="https://www.youtube.com/embed/mQynd4Uy45M"
+                title="Playing pubg with new sensitivity setting.." frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen> </iframe>
+
+            <iframe class="videolink2" width="304" height="250" src="https://www.youtube.com/embed/J6gwmSrZQM8"
+                title="PUBG MOBILE||Today game play 😂🐔🐔" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <iframe class="videolink3" width="304" height="250" src="https://www.youtube.com/embed/xTli_uF39TY"
+                title="Pubg edited video|| Winner Winner Chicken Dinner..." frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            <iframe class="videolink4" width="304" height="250" src="https://www.youtube.com/embed/OmeCJbndJ74"
+                title="pubg mobile gameplay lockdown part 1" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+
+        </div>
+
+        <hr class="horizontalline3">
+
+    </div>
+
+    <!--        ---------------------------------------------------------------------------  5                                             -->
+
+
+    <div class="newsandupdates" id="newsandupdates">
+        <p class="newandupdatesheading"> NEWS AND UPDATES: </p>
+        <iframe class="officialpubgupdate1" width="305" height="250" src="https://www.youtube.com/embed/Mi3lpuxi1SE"
+            title="PUBGMOBILExKAROLG Collaboration Teaser 🌊 🐚 🌴" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <iframe class="officialpubgupdate2" width="305" height="250" src="https://www.youtube.com/embed/2T-wriygfzc"
+            title="PUBG MOBILE | WOW Easy to Use Gameplay Devices" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <iframe class="officialpubgupdate3" width="305" height="250" src="https://www.youtube.com/embed/af23BtFBkvo"
+            title="PUBG MOBILE | Power Crew Series: Draconic Power has arrived!" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <iframe class="officialpubgupdate4" width="305" height="250" src="https://www.youtube.com/embed/2P6DE0J7GtE"
+            title="PUBG MOBILE X Ducati Collaboration Live now!" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+
+    </div>
+    <hr class="horizontalline4">
+    <!--        ---------------------------------------------------------------------------  5                                             -->
+
+
+    <div class="event-container" id="event-container">
+
+        <p class="event-heading"> Events: </p>
+
+        <div class="event-subcontainer">
+            <img class="eventimg1" src="https://www.pubgmobile.com/images/event/royalepass/kv_event106.jpg"
+                alt="wait a while">
+            <img class="eventimg2" src="https://www.pubgmobile.com/images/event/royalepass/kv_event107.jpg"
+                alt="wait a while">
+            <img class="eventimg3" src="https://www.pubgmobile.com/images/event/royalepass/kv_event108.jpg"
+                alt="wait a while">
+            <img class="eventimg4" src="https://www.pubgmobile.com/images/event/royalepass/kv_event109.jpg"
+                alt="wait a while">
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <hr class="horizontalline5">
+    <!--        ---------------------------------------------------------------------------  5                                             -->
+
+
+    <div class="about-section" id="about-section">
+        <h class="aboutheading"> About Us: </h>
+
+        <p class="about-section">
+            Thank you for visiting in this page. In this page you will get the latest updates related to PUBG MOBILE:
+            GLOBAL along with <span style="color:rgb(9, 245, 9)"> MY GAME PLAY </span>youtube videos and yt-shorts. <br>
+            My Youtube Channel Link:- <a href="https://www.youtube.com/channel/UCW8MiVTeiXRmR00_7CI9ccw"> My
+                Youtube Channel (Curious lucky gaming) <img class="sitelogolink-bottom"
+                    src="curiouslucky gaming logo.jpg"> </a>
+            <br>You can connect with me through this channel by leaving your comment on my Youtube videos.
+
+        </p>
+
+
+
+    </div>
+    <hr class="horizontalline6">
+
+    <!--        ---------------------------------------------------------------------------  5                                             -->
+
+
+    <div class="bottom">
+        <span class="span1">Copyright © and ®</span> <span class="span2">Since 2022-2050 Under Curious lucky gaming:
+        </span>
+        <span class="span3">(Project Is Done By Curious lucky gaming)</span>
+    </div>
+
+    <!--        ---------------------------------------------------------------------------  5                                             -->
+
+
+</body>
+
+</html>
